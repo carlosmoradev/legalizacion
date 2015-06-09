@@ -46,6 +46,20 @@ echo "</table>";
 
 <?php
 //Espacio para lista desplegable de tipos de documento
+
+$consulta_listado='select * from documentos';
+$listado=mysql_query($consulta_listado);
 ?>
+
+<select name='listadoTDoc'>;
+<?php
+while($fila=mysql_fetch_array($listado)){ ?>
+	<!-- // echo "<option value='".$fila['DOC_TIPO']."'>".$fila['DOC_TIPO']."</option"; -->
+	<option value="<?php echo $fila['DOC_TIPO']; ?>" > <?php echo $fila['DOC_TIPO']; ?> </option>
+	<?php
+}
+?>
+</select>;
+
 
 </body>
