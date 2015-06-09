@@ -1,0 +1,136 @@
+/*Estilos globales*/
+html{
+	background: url("/static/images/fondoBasicoEmpresa.jpg") no-repeat center center fixed;
+	background-size: cover;
+	transition: all 1s ease;
+}
+
+/*Fin estilos globales*/
+/*Estilos Login*/
+#autenticaUsuario{
+	display: none;
+	position: absolute;
+	margin: 0 2em 0 .5em;
+	vertical-align: right;
+}
+
+#logoEmpresa{
+	display: inline-block;
+	margin: 0 0 0 0;
+	/*position: relative;*/
+	vertical-align: right;
+}
+
+#ingreso p{
+	margin: 0;
+	max-width: 25em;
+	text-decoration: none;
+	padding: 0;
+}
+
+#ingreso{
+	background-color: rgba(250, 250, 250, 0.5);
+	max-width: 25em;
+	/*margin: 0 auto 0 auto; */
+	/*margin: 0;*/
+}
+
+#logoEmpresa, #autenticaUsuario{
+	display: inline-block;
+}
+
+.autenticacion {
+	background-color: rgba(250, 250, 250, 0.5);
+	border-radius: 1em;
+	font-size: 1.5em;
+	margin: 0 auto 0 auto; 
+	max-width: 25em;
+	min-width: 10em;
+	text-align: center;
+}
+
+.headerBase{
+	font-size: 2em;
+	text-align: center;
+	text-shadow: .2em .2em .3em gray, 0 0 1em white, 0 0 0.2em green;
+}
+
+.logoLogin{
+	display: inline;
+	background-size: 5em;
+	float: left;
+	transition: all 1s ease;
+	/*width: 140px;*/
+	/*min-width: 10em;*/
+	/*padding: 1em;*/
+}
+
+.login {
+	text-align: center;
+	vertical-align: right;
+	float: right;
+	max-width: 4em;
+	/*margin: 0;
+	padding: 0;*/
+}
+.loginBoton{
+	border-radius: .5em;
+/*	vertical-align: left;
+	display: inline;*/
+}
+
+/*.loginBoton:hover:after{
+	content: "accediendo";
+	position: relative;
+	background: green;
+	color white;
+}*/
+
+.login, .logoLogin{
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.loginUsuario, .passUsuario{
+	border-radius: 2em;
+	margin: 0.5em 2% 1em 2%;
+	text-align: center;
+}
+/*fin estilos login*/
+/*estilos legaliza*/
+.consultaHistorico
+{
+	text-decoration: none;
+	width: 16em;
+}
+
+table.trHistoricoMin
+{
+	background-color: rgba(255, 255, 255, 0.5);
+	border-collapse: separate;
+	/*border-spacing: .5em;*/
+	border-radius: 1.5em;
+	line-height: 1em;
+	padding: 1em;
+	margin-left: 25%;
+}
+
+table.trHistoricoMin, .consultaHistorico
+{
+	display: inline-block;
+}
+
+.trHistoricoMin thead th
+{
+background-color: peru;
+font-size: 0 2em;
+padding: 0 1em;
+}
+
+.trHistoricoMin tbody td
+{
+background-color: rgb(255, 255, 255, 0.5);
+text-align: center;
+}
+
+/*fin estilos legaliza*/
