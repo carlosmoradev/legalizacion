@@ -41,17 +41,17 @@ echo "</table>";
 
 
 ?>
-
+<section id="ConsultaHistoria">
 <a href="#" id="consultaHistorial">Consulta historial</a>
-
+</section>
 <?php
 //Espacio para lista desplegable de tipos de documento
 
 $consulta_listado='select * from documentos';
 $listado=mysql_query($consulta_listado);
 ?>
-
-<select name='listadoTDoc'>;
+<section id="ListadoTipos">
+<select name='listadoTDoc'>
 <?php
 while($fila=mysql_fetch_array($listado)){ ?>
 	<!-- // echo "<option value='".$fila['DOC_TIPO']."'>".$fila['DOC_TIPO']."</option"; -->
@@ -59,7 +59,7 @@ while($fila=mysql_fetch_array($listado)){ ?>
 	<?php
 }
 ?>
-</select>;
-
+</select>
+</section>
 
 </body>
