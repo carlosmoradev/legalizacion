@@ -73,7 +73,11 @@ $listado=mysql_query($consulta_listado);
 <section id="gastoSeleccionado">nombre seleccionado</section>
 <!-- este espacio contiene el nombre seleccionado y la sigla -->
 
-<nav>
+<section>fecha del gasto</section>
+<!-- espacio para la fecha de consumo -->
+<input type="date" name="fecha" value="<?php echo date("Y-m-d");?>">
+
+<nav id="selectorGasto">
 	<ul>
 		<li><a href="#" id="gReembolsable"></a>Gasto Reembolsable</li>
 		<li><a href="#" id="gViaje"></a>Gasto viaje</li>
@@ -82,9 +86,7 @@ $listado=mysql_query($consulta_listado);
 		<li><a href="#" id="cMenor"></a>Caja Menor</li>
 	</ul>
 </nav>
-<section>fecha del gasto</section>
-<!-- espacio para la fecha de consumo -->
-<input type="date" name="fecha" value="<?php echo date("Y-m-d");?>">
+
 <section>termina</section>
 <!-- Graba los cambios o los cancela -->
 </body>
