@@ -40,8 +40,15 @@ html{
 }
 
 #selectorGasto {
+	background: rgba(0,0,0,0.5);
+	bottom: 0;
+	color: #EEE;
 	cursor: pointer;
-	/*text-decoration: none;*/
+	left: 30%;
+	/*position: fixed;*/
+	vertical-align: top;
+	width: 50%;
+	
 
 }
 
@@ -56,7 +63,7 @@ html{
 }
 
 #selectorGasto ul li a {
-	background: #111000;
+	/*background: #111000;*/
 	color: white;
 	margin: 0, 0.3em, 0, 1em;
 	padding: 0.3em;
