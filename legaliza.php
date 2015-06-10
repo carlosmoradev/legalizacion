@@ -5,6 +5,10 @@
 	<title>Legalización de Documentos</title>
 	<link rel="stylesheet" href="static/styles/normalize.css">
 	<link rel="stylesheet" href="static/styles/design.css">
+	// <script language="JavaScript">
+	// self.moveTo(screen.width/2-400,screen.height/2-300)
+	// self.resizeTo(width="800",height="600")
+	// </script>
 <?php
 session_start();
 include_once 'config/connection.php';
@@ -50,16 +54,32 @@ echo "</table>";
 $consulta_listado='select * from documentos';
 $listado=mysql_query($consulta_listado);
 ?>
-<section id="ListadoTipos">
-<select name='listadoTDoc'>
-<?php
-while($fila=mysql_fetch_array($listado)){ ?>
-	<!-- // echo "<option value='".$fila['DOC_TIPO']."'>".$fila['DOC_TIPO']."</option"; -->
-	<option value="<?php echo $fila['DOC_TIPO']; ?>" > <?php echo $fila['DOC_TIPO']; ?> </option>
+<section id="listadoTipos">
+	<select name="listadoTDoc">
 	<?php
-}
-?>
-</select>
+	while($fila=mysql_fetch_array($listado)){ ?>
+		<option value="<?php echo $fila['DOC_TIPO']; ?>" > 
+			<?php echo $fila['DOC_TIPO']; ?> 
+		</option>
+	<?php 
+	}
+	$opcion = $_POST['listadoTDoc'];
+	echo $opcion;
+	?>
+	</select>
+	
 </section>
 
+<section id="gastoSeleccionado">nombre seleccionado</section>
+<!-- este espacio contiene el nombre seleccionado y la sigla -->
+
+
+
+<section>campo texto descripcion general </section>
+<!-- Este espacio contiene el campo de texto para diligenciar la descripcion general -->
+<section>fecha del gasto</section>
+<!-- espacio para la fecha de consumo -->
+<input type="date" name="fecha" value="<?php echo date("Y-m-d");?>">
+<section>termina</section>
+<!-- Graba los cambios o los cancela -->
 </body>
