@@ -64,7 +64,7 @@ $listado=mysql_query($consulta_listado);
 	<?php 
 	}
 	$opcion = $_POST['listadoTDoc'];
-	echo $opcion;
+
 	?>
 	</select>
 	
@@ -73,13 +73,20 @@ $listado=mysql_query($consulta_listado);
 <section id="gastoSeleccionado">nombre seleccionado</section>
 <!-- este espacio contiene el nombre seleccionado y la sigla -->
 
-
-
-<section>campo texto descripcion general </section>
-<!-- Este espacio contiene el campo de texto para diligenciar la descripcion general -->
 <section>fecha del gasto</section>
 <!-- espacio para la fecha de consumo -->
 <input type="date" name="fecha" value="<?php echo date("Y-m-d");?>">
+
+<nav id="selectorGasto">
+	<ul>
+		<li><a href="#" id="gReembolsable"></a>Gasto Reembolsable</li>
+		<li><a href="#" id="gViaje"></a>Gasto viaje</li>
+		<li><a href="#" id="tCredito"></a>Tarjeta Credito</li>
+		<li><a href="#" id="tDebito"></a>Tarjeta Debito</li>
+		<li><a href="#" id="cMenor"></a>Caja Menor</li>
+	</ul>
+</nav>
+
 <section>termina</section>
 <!-- Graba los cambios o los cancela -->
 </body>
