@@ -96,9 +96,11 @@ html{
 
 
 #solicitaFormato{
-	background-color: peru;
+	background-color: rgba(114, 132, 125, 0.8);
+	border-color: blue;
 	border-radius: .5em;
-	padding-right: 2em;
+	paddingt: 0.5em 1em 0.5em 2em;
+	text-align: center;
 	
 }
 #solicitaFormato:hover{
