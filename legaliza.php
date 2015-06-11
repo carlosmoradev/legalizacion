@@ -41,7 +41,11 @@ echo "</table>";
 <section id="ConsultaHistoria">
 <a href="#" id="consultaHistorial">Consulta historial</a>
 </section>
-
+<section  id="explicacionLegaliza" class="espacioIconosGastos">
+	<h2>Procedimiento</h2>
+	<p>Seleccione el tipo de gasto que desea legalizar, 
+		luego la fecha del consumo y finalmente solicite la el formato de legalizacion correspondiente</p>
+</section>
 
 <section id="gastoSeleccionado"></section>
 <!-- este espacio contiene el nombre seleccionado y la sigla -->
@@ -55,21 +59,21 @@ echo "</table>";
 </figure>
 
 <figure id="gastosViaje" class="espacioIconosGastos">
-	<img src="/static/images/gastosViaje.png">
+	<a href="#" ><img src="/static/images/gastosViaje.png"></a>
 	<figcaption>
 		Gastos de Viaje
 	</figcaption>
 </figure>
 
 <figure id="cajaMenor" class="espacioIconosGastos">
-	<img src="/static/images/cajaMenor.png">
+	<a href="#" ><img src="/static/images/cajaMenor.png"></a>
 	<figcaption>
 		Ajuste Caja Menor
 	</figcaption>
 </figure>
 
 <figure id="tarjetaCredito" class="espacioIconosGastos">
-	<img src="/static/images/tarjetaCredito.png">
+	<a href="#" ><img src="/static/images/tarjetaCredito.png"></a>
 	<figcaption>
 		Gastos con Tarjeta de Crédito
 	</figcaption>
@@ -77,12 +81,15 @@ echo "</table>";
 
 <section id="fechaGasto" class="fecha">
 <!-- espacio para la fecha de consumo -->
-<input type="date" name="fecha" value="<?php echo date("Y-m-d");?>">
-<p>fecha del gasto</p>
+	<input type="date" name="fecha" value="<?php echo date("Y-m-d");?>">
+	<p>fecha del gasto</p>
+		<section id="solicitaFormato">
+		<p>Solicitar Formato</p>
+		</section>
 </section>
 
 <figure id="tarjetaDebito" class="espacioIconosGastos">
-	<img src="/static/images/tarjetaDebito.png">
+	<a href="#" ><img src="/static/images/tarjetaDebito.png"></a>
 	<figcaption>
 		Gastos con Tarjeta Débito
 	</figcaption>
