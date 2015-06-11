@@ -47,9 +47,9 @@ echo "</table>";
 </section>
 
 
-<section id="gastoSeleccionado">nombre seleccionado</section>
+<section id="gastoSeleccionado"></section>
 <!-- este espacio contiene el nombre seleccionado y la sigla -->
-
+<section id="seleccionIconos">
 
 <figure id="gastosReembolsables" class="espacioIconosGastos">
 	<img src="/static/images/gastosReembolsables.png" class="iconoGastos">
@@ -72,24 +72,26 @@ echo "</table>";
 	</figcaption>
 </figure>
 
-<figure id="tarjetaDebito" class="espacioIconosGastos">
+<figure id="tarjetaCredito" class="espacioIconosGastos">
 	<img src="/static/images/tarjetaCredito.png">
 	<figcaption>
 		Gastos con Tarjeta de Credito
 	</figcaption>
 </figure>
 
-<section>fecha del gasto
+<section id="fechaGasto" class="espacioIconosGastos">
 <!-- espacio para la fecha de consumo -->
 <input type="date" name="fecha" value="<?php echo date("Y-m-d");?>">
+<p>fecha del gasto</p>
 </section>
 
-<figure>
+<figure id="tarjetaDebito" class="espacioIconosGastos">
 	<img src="/static/images/tarjetaDebito.png">
 	<figcaption>
 		Gastos con Tarjeta Debito
 	</figcaption>
 </figure>
+</section>
 
 <section>termina</section>
 <!-- Graba los cambios o los cancela -->
