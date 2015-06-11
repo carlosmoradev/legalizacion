@@ -133,7 +133,6 @@ html{
 	background: url("/static/images/fecha.png") no-repeat;
 	width: 30%;
 	padding: 5em 0 0 0 ;
-	/*margin: 4em 0 0 0 ;*/
 	margin: 0 ;
 	text-align: center;
 }
@@ -153,9 +152,6 @@ html{
 	background-size: 5em;
 	float: left;
 	transition: all 1s ease;
-	/*width: 140px;*/
-	/*min-width: 10em;*/
-	/*padding: 1em;*/
 }
 
 .login {
