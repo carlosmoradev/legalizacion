@@ -71,7 +71,7 @@ echo "</table>";
 <figure id="tarjetaCredito" class="espacioIconosGastos">
 	<img src="/static/images/tarjetaCredito.png">
 	<figcaption>
-		Gastos con Tarjeta de Credito
+		Gastos con Tarjeta de Crédito
 	</figcaption>
 </figure>
 
@@ -84,7 +84,7 @@ echo "</table>";
 <figure id="tarjetaDebito" class="espacioIconosGastos">
 	<img src="/static/images/tarjetaDebito.png">
 	<figcaption>
-		Gastos con Tarjeta Debito
+		Gastos con Tarjeta Débito
 	</figcaption>
 </figure>
 </section>
