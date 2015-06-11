@@ -40,52 +40,56 @@ while ($dato=mysql_fetch_array($resultado)) {
 }
 echo "</table>";
 //fin del espacio para mostrar los tres ultimos registros
-
-
-
-
 ?>
+
 <section id="ConsultaHistoria">
 <a href="#" id="consultaHistorial">Consulta historial</a>
 </section>
-<?php
-//Espacio para lista desplegable de tipos de documento
 
-$consulta_listado='select * from documentos';
-$listado=mysql_query($consulta_listado);
-?>
-<section id="listadoTipos">
-	<select name="listadoTDoc">
-	<?php
-	while($fila=mysql_fetch_array($listado)){ ?>
-		<option value="<?php echo $fila['DOC_TIPO']; ?>" > 
-			<?php echo $fila['DOC_TIPO']; ?> 
-		</option>
-	<?php 
-	}
-	$opcion = $_POST['listadoTDoc'];
-
-	?>
-	</select>
-	
-</section>
 
 <section id="gastoSeleccionado">nombre seleccionado</section>
 <!-- este espacio contiene el nombre seleccionado y la sigla -->
 
-<section>fecha del gasto</section>
+
+<figure>
+	<img src="/static/images/cajaMenor.jpeg">
+	<figcaption>
+		Gastos caja Menor
+	</figcaption>
+</figure>
+
+<figure>
+	<img src="/static/images/cajaMenor.jpeg">
+	<figcaption>
+		Gastos caja Menor
+	</figcaption>
+</figure>
+
+<figure>
+	<img src="/static/images/cajaMenor.jpeg">
+	<figcaption>
+		Gastos caja Menor
+	</figcaption>
+</figure>
+
+<figure>
+	<img src="/static/images/cajaMenor.jpeg">
+	<figcaption>
+		Gastos caja Menor
+	</figcaption>
+</figure>
+
+<section>fecha del gasto
 <!-- espacio para la fecha de consumo -->
 <input type="date" name="fecha" value="<?php echo date("Y-m-d");?>">
+</section>
 
-<nav id="selectorGasto">
-	<ul>
-		<li><a href="#" id="gReembolsable"></a>Gasto Reembolsable</li>
-		<li><a href="#" id="gViaje"></a>Gasto viaje</li>
-		<li><a href="#" id="tCredito"></a>Tarjeta Credito</li>
-		<li><a href="#" id="tDebito"></a>Tarjeta Debito</li>
-		<li><a href="#" id="cMenor"></a>Caja Menor</li>
-	</ul>
-</nav>
+<figure>
+	<img src="/static/images/cajaMenor.jpeg">
+	<figcaption>
+		Gastos caja Menor
+	</figcaption>
+</figure>
 
 <section>termina</section>
 <!-- Graba los cambios o los cancela -->
