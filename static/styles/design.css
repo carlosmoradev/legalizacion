@@ -49,6 +49,18 @@ html{
 	max-width: 250px;
 }
 
+#gastosReembolsables:hover, #tarjetaDebito:hover{
+	transform: rotate(10deg);
+}
+
+#cajaMenor:hover, #tarjetaCredito:hover{
+	transform: rotate(-10deg);
+}
+
+#gastosViaje:hover{
+	transform: scale(1.2,1);
+}
+
 #gastosReembolsables, #gastosViaje, #cajaMenor{
 	display: inline-block;
 	vertical-align: top;
@@ -115,8 +127,18 @@ html{
 	cursor: pointer;
 	margin: 0;
 	text-align: center;
-	transition: all 2s ease;
-
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+}
+.espacioIconosGastos.slideright:hover{
+	-webkit-transform: translate(3em,0);
+	-moz-transform: translate(3em,0);
+	-o-transform: translate(3em,0);
+	-ms-transform: translate(3em,0);
+	transform: translate(3em,0);
 }
 
 .fecha{
@@ -181,8 +203,8 @@ html{
 }
 /*fin estilos login*/
 /*estilos legaliza*/
-.consultaHistorico
-{
+
+.consultaHistorico{
 	text-decoration: none;
 	width: 16em;
 }
