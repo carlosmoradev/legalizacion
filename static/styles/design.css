@@ -172,13 +172,6 @@ html{
 	display: inline;*/
 }
 
-/*.loginBoton:hover:after{
-	content: "accediendo";
-	position: relative;
-	background: green;
-	color white;
-}*/
-
 .login, .logoLogin{
 	display: inline-block;
 	vertical-align: bottom;
