@@ -65,10 +65,10 @@ echo "</table>";
 	</figcaption>
 </figure>
 
-<figure id="tarjetaCredito" class="espacioIconosGastos">
-	<img src="/static/images/tarjetaCredito.png">
+<figure id="cajaMenor" class="espacioIconosGastos">
+	<img src="/static/images/cajaMenor.png">
 	<figcaption>
-		Gastos con Tarjeta de Credito
+		Ajuste Caja Menor
 	</figcaption>
 </figure>
 
