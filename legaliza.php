@@ -51,31 +51,31 @@ echo "</table>";
 <!-- este espacio contiene el nombre seleccionado y la sigla -->
 
 
-<figure>
-	<img src="/static/images/cajaMenor.jpeg">
+<figure id="gastosReembolsables" class="espacioIconosGastos">
+	<img src="/static/images/gastosReembolsables.png" class="iconoGastos">
 	<figcaption>
-		Gastos caja Menor
+		Gastos Reembolsables
 	</figcaption>
 </figure>
 
-<figure>
-	<img src="/static/images/cajaMenor.jpeg">
+<figure id="gastosViaje" class="espacioIconosGastos">
+	<img src="/static/images/gastosViaje.png">
 	<figcaption>
-		Gastos caja Menor
+		Gastos de Viaje
 	</figcaption>
 </figure>
 
-<figure>
-	<img src="/static/images/cajaMenor.jpeg">
+<figure id="tarjetaCredito" class="espacioIconosGastos">
+	<img src="/static/images/tarjetaCredito.png">
 	<figcaption>
-		Gastos caja Menor
+		Gastos con Tarjeta de Credito
 	</figcaption>
 </figure>
 
-<figure>
-	<img src="/static/images/cajaMenor.jpeg">
+<figure id="tarjetaDebito" class="espacioIconosGastos">
+	<img src="/static/images/tarjetaCredito.png">
 	<figcaption>
-		Gastos caja Menor
+		Gastos con Tarjeta de Credito
 	</figcaption>
 </figure>
 
@@ -85,9 +85,9 @@ echo "</table>";
 </section>
 
 <figure>
-	<img src="/static/images/cajaMenor.jpeg">
+	<img src="/static/images/tarjetaDebito.png">
 	<figcaption>
-		Gastos caja Menor
+		Gastos con Tarjeta Debito
 	</figcaption>
 </figure>
 
