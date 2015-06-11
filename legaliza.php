@@ -79,7 +79,7 @@ echo "</table>";
 	</figcaption>
 </figure>
 
-<section id="fechaGasto" class="espacioIconosGastos">
+<section id="fechaGasto" class="fecha">
 <!-- espacio para la fecha de consumo -->
 <input type="date" name="fecha" value="<?php echo date("Y-m-d");?>">
 <p>fecha del gasto</p>
