@@ -112,6 +112,7 @@ html{
 .espacioIconosGastos{
 	width: 30%;
 	padding: 0;
+	cursor: pointer;
 	margin: 0;
 	text-align: center;
 	transition: all 2s ease;
