@@ -127,21 +127,9 @@ html{
 	cursor: pointer;
 	margin: 0;
 	text-align: center;
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	-ms-transition: all 1s ease;
 	transition: all 1s ease;
-}
-.espacioIconosGastos.slideright:hover{
-	-webkit-transform: translate(3em,0);
-	-moz-transform: translate(3em,0);
-	-o-transform: translate(3em,0);
-	-ms-transform: translate(3em,0);
-	transform: translate(3em,0);
-}
 
-.fecha{
+	.fecha{
 	background: url("/static/images/fecha.png") no-repeat;
 	width: 30%;
 	padding: 5em 0 0 0 ;
