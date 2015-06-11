@@ -5,10 +5,6 @@
 	<title>Legalización de Documentos</title>
 	<link rel="stylesheet" href="static/styles/normalize.css">
 	<link rel="stylesheet" href="static/styles/design.css">
-	// <script language="JavaScript">
-	// self.moveTo(screen.width/2-400,screen.height/2-300)
-	// self.resizeTo(width="800",height="600")
-	// </script>
 <?php
 session_start();
 include_once 'config/connection.php';
@@ -25,8 +21,8 @@ include_once 'config/connection.php';
 
 // estructuro la tabla superior con el historico de los ultimos 3 documentos
 
-$query="select * from documentos ORDER BY DOC_CREAC LIMIT 3";
-$resultado=mysql_query($query);
+$ultimosTres="select * from documentos ORDER BY DOC_CREAC LIMIT 3";
+$resultado=mysql_query($ultimosTres);
 
 echo "<table border='1'><tr><td>Tipo Documento</td><td>Descripcion Gasto</td><td>Fecha de creacion</td></tr>";
 
