@@ -48,7 +48,7 @@ echo "</table>";
 <section id="seleccionIconos">
 
 <figure id="gastosReembolsables" class="espacioIconosGastos">
-	<img src="/static/images/gastosReembolsables.png" class="iconoGastos">
+	<a href="#" ><img src="/static/images/gastosReembolsables.png" class="iconoGastos"></a>
 	<figcaption>
 		Gastos Reembolsables
 	</figcaption>
