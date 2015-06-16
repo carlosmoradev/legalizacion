@@ -119,14 +119,15 @@ html{
 }
 
 .espacioIconosGastos{
-	width: 30%;
+	width: 15%;
 	padding: 0;
 	cursor: pointer;
 	margin: 0;
 	text-align: center;
 	transition: all 1s ease;
-
-	.fecha{
+}
+.fecha
+{
 	background: url("/static/images/fecha.png") no-repeat;
 	width: 30%;
 	padding: 5em 0 0 0 ;
@@ -137,6 +138,10 @@ html{
 /*.inputfecha{
 	margin-top: 4em;
 }*/
+.iconoGastos
+{
+	width: 5em;
+}
 
 .headerBase{
 	font-size: 2em;
