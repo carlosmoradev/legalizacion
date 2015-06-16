@@ -5,10 +5,13 @@
 	<title>Legalización de Documentos</title>
 	<link rel="stylesheet" href="static/styles/normalize.css">
 	<link rel="stylesheet" href="static/styles/design.css">
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	<script type="text/javascript" src="static/js/legaliza.js"></script>
+	<script type="text/javascript">
+	var opciones="left=100,top=100,width=250,height=150";
+	asignaVentana = window.open("","",opciones);
+	asignaVentana.moveTo(400,100);
+	
+	</script>
 <?php
 session_start();
 include_once 'config/connection.php';
