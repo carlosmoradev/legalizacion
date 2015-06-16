@@ -83,14 +83,14 @@ echo "</table>";
 	</figcaption>
 </figure>
 
-<section id="fechaGasto" class="fecha">
+<!-- <section id="fechaGasto" class="fecha"> -->
 <!-- espacio para la fecha de consumo -->
-	<input type="date" name="fecha" value="<?php echo date("Y-m-d");?>">
-	<p>fecha del gasto</p>
-		<section id="solicitaFormato">
-		<p>Solicitar Formato</p>
-		</section>
-</section>
+	<!-- <input id="solicitaFecha" type="text" name="fecha"> -->
+	<!-- <p>fecha del gasto</p> -->
+		<!-- <section id="solicitaFormato"> -->
+		<!-- <p>Solicitar Formato</p> -->
+		<!-- </section> -->
+<!-- </section> -->
 
 <figure id="tarjetaDebito" class="espacioIconosGastos">
 	<a href="#" ><img src="/static/images/tarjetaDebito.png"></a>
