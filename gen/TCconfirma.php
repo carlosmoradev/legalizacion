@@ -1,28 +1,17 @@
 <?php
+ini_set('display_errors',1);
+error_reporting(E_ALL);
 session_start();
 include_once '../config/connection.php';
 
+$consultaTC= "SELECT DOC_ID FROM documentos WHERE DOC_SIGLA = 'TC' ORDER BY DOC_ID DESC LIMIT1";
+$ultimaTC=mysql_query($consultaTC);
 
-
-// estructuro la tabla superior con el historico de los ultimos 3 documentos
-
-$ultimosTres="select DOC_ID,DOC_TIPO,DOC_DESC,DOC_CREAC from documentos ORDER BY DOC_CREAC DESC LIMIT 3";
-$resultado=mysql_query($ultimosTres);
-
-while ($dato=mysql_fetch_array($resultado)){
-	echo .$dato['DOC_ID'].;
+echo "Consecutivo generado ";
+while($datico=mysql_fetch_array($ultimaTC)){
+	// echo $datico['DOC_ID'].;
 }
 
-// echo "<table border='1'><tr><td>Consecutivo</td<td>Tipo Documento</td><td>Fecha de creacion</td></tr>";
-
-// while ($dato=mysql_fetch_array($resultado)) {
-// 	# code...
-// 	echo "<tr>";
-// 	echo "<td>".$dato['DOC_ID']."</td>";
-// 	echo "<td>".$dato['DOC_TIPO']."</td>";
-// 	echo "<td>".$dato['DOC_CREAC']."</td>";
-// 	echo "</tr>";
-// }
-// echo "</table>";
-fin del espacio para mostrar los tres ultimos registros
+// $ret = mysql_fetch_array($ultimaTC);
+echo $ultimaTC;
 ?>

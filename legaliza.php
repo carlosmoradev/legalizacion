@@ -13,6 +13,9 @@
 	// asignaVentana.moveTo(400,100);
 	</script>
 <?php
+// ini_set('display_errors',1);
+// error_reporting(E_ALL);
+
 session_start();
 include_once 'config/connection.php';
 
