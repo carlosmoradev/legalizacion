@@ -16,6 +16,8 @@ Durante todo ese proceso buscare ir mejorando el codigo, para pasar de un simple
 
 #TO DO
 
+[IMPORTANTE] centralizar todas las funciones del directorio gen en una misma funcion
+
 [IMPORTANTE] Publicar un archivo de texto que lleve el nombre del gasto registrado, para poder descargarlo.  Se toma un archivo base existente en el servidor y se copia con el nombre del gasto registrado.
 
 [OPCIONAL] Seria interesante que el usuario tenga la opcion de decidir si descargar el archivo directamente o lo envia a su cuenta de correo registrada.
