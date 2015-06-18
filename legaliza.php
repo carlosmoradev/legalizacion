@@ -76,7 +76,7 @@ echo "</table>";
 </figure>
 
 <figure id="cajaMenor" class="espacioIconosGastos">
-	<a href="#" ><img src="/static/images/cajaMenor.png" class="iconoGastos"></a>
+	<a href="#" onclick="return confirmaCM();"><img src="/static/images/cajaMenor.png" class="iconoGastos"></a>
 	<figcaption>
 		Ajuste Caja Menor
 	</figcaption>

@@ -17,7 +17,16 @@ function confirmaTC()
     // alert("operando");
      if (window.confirm("Esta seguro de que desea solicitar este formato?")) 
              { 
-                 window.open("gen/TC.php", "Thanks for Visiting!");
+                 window.open("gen/TC.php", "Solicitud para Tarjeta Credito Realizada");
+             }
+}
+
+function confirmaCM()
+{
+    // alert("operando");
+     if (window.confirm("Esta seguro de que desea solicitar este formato?")) 
+             { 
+                 window.open("gen/CM.php", "Solicitud para Caja Menor Realizada");
              }
 }
 
