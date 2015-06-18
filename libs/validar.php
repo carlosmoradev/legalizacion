@@ -37,7 +37,8 @@ if($count==1){
 // session_register("mypassword"); 
 $_SESSION['myusername'] = $myusername;
 $_SESSION['mypassword'] = $mypassword;
-header("location:/libs/login_success.php");
+//header("location:/libs/login_success.php");
+header("location:/legaliza.php");
 
 }
 else {
