@@ -39,6 +39,15 @@ function confirmaGR()
              }
 }
 
+function confirmaGV()
+{
+    // alert("operando");
+     if (window.confirm("Esta seguro de que desea solicitar este formato?")) 
+             { 
+                 window.open("gen/GV.php", "Solicitud para Gastos de Viaje Realizada");
+             }
+}
+
 // console.log();
 function legaliza()
 {
