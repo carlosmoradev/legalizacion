@@ -62,14 +62,14 @@ echo "</table>";
 <section id="seleccionIconos">
 
 <figure id="gastosReembolsables" class="espacioIconosGastos">
-	<a href="#" id="gReembolsa"><img src="/static/images/gastosReembolsables.png" class="iconoGastos"></a>
+	<a href="#" id="gReembolsa" onclick="return confirmaGR();"><img src="/static/images/gastosReembolsables.png" class="iconoGastos"></a>
 	<figcaption>
 		Gastos Reembolsables
 	</figcaption>
 </figure>
 
 <figure id="gastosViaje" class="espacioIconosGastos">
-	<a href="#" ><img src="/static/images/gastosViaje.png" class="iconoGastos"></a>
+	<a href="#" onclick="return confirmaGV();"><img src="/static/images/gastosViaje.png" class="iconoGastos"></a>
 	<figcaption>
 		Gastos de Viaje
 	</figcaption>
