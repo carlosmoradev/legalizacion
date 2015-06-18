@@ -30,6 +30,15 @@ function confirmaCM()
              }
 }
 
+function confirmaGR()
+{
+    // alert("operando");
+     if (window.confirm("Esta seguro de que desea solicitar este formato?")) 
+             { 
+                 window.open("gen/GR.php", "Solicitud para Gastos Reembolsables Realizada");
+             }
+}
+
 // console.log();
 function legaliza()
 {
