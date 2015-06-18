@@ -15,16 +15,24 @@ function pruebaOn()
 function confirmaTC()
 {
     // alert("operando");
-     if (window.confirm("Esta seguro de que desea solicitar este formato?")) 
+     if (window.confirm("Esta seguro de que desea solicitar el formato para Tarjeta de Credito?")) 
              { 
                  window.open("gen/TC.php", "Solicitud para Tarjeta Credito Realizada");
+             }
+}
+function confirmaTD()
+{
+    // alert("operando");
+     if (window.confirm("Esta seguro de que desea solicitar el formato para tarjeta Debito?")) 
+             { 
+                 window.open("gen/TD.php", "Solicitud para Tarjeta Debito Realizada");
              }
 }
 
 function confirmaCM()
 {
     // alert("operando");
-     if (window.confirm("Esta seguro de que desea solicitar este formato?")) 
+     if (window.confirm("Esta seguro de que desea solicitar el formato para caja Menor?")) 
              { 
                  window.open("gen/CM.php", "Solicitud para Caja Menor Realizada");
              }
@@ -33,7 +41,7 @@ function confirmaCM()
 function confirmaGR()
 {
     // alert("operando");
-     if (window.confirm("Esta seguro de que desea solicitar este formato?")) 
+     if (window.confirm("Esta seguro de que desea solicitar el formato para Gastos Reembolsables?")) 
              { 
                  window.open("gen/GR.php", "Solicitud para Gastos Reembolsables Realizada");
              }
