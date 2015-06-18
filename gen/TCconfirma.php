@@ -1,17 +1,18 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+	</head>
+<body>
 <?php
-ini_set('display_errors',1);
-error_reporting(E_ALL);
-session_start();
-include_once '../config/connection.php';
+$link = mysqli_connect("localhost","usulegal","dxPCAzmmmCVJcPbtBQ5EjJqd");
+mysqli_select_db($link,"legal");
+// $result = mysqli_query($link, "SELECT * FROM documentos WHERE DOC_SIGLA = 'TC' ORDER BY DOC_ID DESC LIMIT1");
+$result = mysqli_query($link, "SELECT * FROM documentos WHERE DOC_SIGLA = 'TC' ORDER BY DOC_ID DESC");
+mysqli_data_seek($result, 0);
+$extraido = mysqli_fetch_array($result);
 
-$consultaTC= "SELECT DOC_ID FROM documentos WHERE DOC_SIGLA = 'TC' ORDER BY DOC_ID DESC LIMIT1";
-$ultimaTC=mysql_query($consultaTC);
+echo "- Documento: ".$extraido['DOC_ID']."<br/> ";
 
-echo "Consecutivo generado ";
-while($datico=mysql_fetch_array($ultimaTC)){
-	// echo $datico['DOC_ID'].;
-}
-
-// $ret = mysql_fetch_array($ultimaTC);
-echo $ultimaTC;
 ?>
+</body>
+</html>
