@@ -1,24 +1,47 @@
 <?php
-session_start();
-include_once 'config/connection.php';
+ini_set('display_errors',1);
+error_reporting(E_ALL);
 
-$usuario=$_POST['usuario'];
-$clave=$_POST['clave'];
 
-$autentica="select usua_login, usua_paswd from usuarios where usua_login='$usuario' and usua_paswd='$clave'";
-$validacion=mysql_query($autentica);
+$host="localhost";
+$username="usulegal";
+$password="dxPCAzmmmCVJcPbtBQ5EjJqd";
+$db_name="legal";
+$tbl_name="usuarios";
 
-if($reg=mysql_fetch_array($autentica))
-	{
-	$_SESSION[‘nombre’]=$reg[‘nombres’];
-	$_SESSION[‘apellido’]=$reg[‘apellidos’];
+$conecta=mysqli_connect("$host","$username","$password") or die("Conexion no establecida");
+mysqli_select_db($conecta, "$db_name") or die("Base de datos no disponible");
 
-	echo”<script>location.href=’legaliza.php'";</script>
-	}
-	else
-	{
-	echo<script>alert(‘usuario o clave incorrectos’)</script>”;
-	echo<script>location.href=’index.php'</script>;
+$myusername=$_POST['usuario'];
+$mypassword=$_POST['clave'];
+
+//espacio para revisar la proteccion contra injection
+
+$myusername = stripslashes($myusername);
+$mypassword = stripslashes($mypassword);
+$myusername = mysqli_real_escape_string($conecta, $myusername);
+$mypassword = mysqli_real_escape_string($conecta, $mypassword);
+$sql="SELECT * FROM $tbl_name WHERE usua_login='$myusername' and usua_pasw='$mypassword'";
+$result=mysqli_query($conecta, $sql);
+
+
+
+// Mysql_num_row is counting table row
+$count=mysqli_num_rows($result);
+
+// If result matched $myusername and $mypassword, table row must be 1 row
+if($count==1){
+
+// // Register $myusername, $mypassword and redirect to file "login_success.php"
+// session_register("myusername");
+// session_register("mypassword"); 
+$_SESSION['myusername'] = $myusername;
+$_SESSION['mypassword'] = $mypassword;
+header("location:/libs/login_success.php");
+
+}
+else {
+echo "Error en usuario o Password";
 }
 
 ?>
