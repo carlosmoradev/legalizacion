@@ -50,7 +50,7 @@ function confirmaGR()
 function confirmaGV()
 {
     // alert("operando");
-     if (window.confirm("Esta seguro de que desea solicitar este formato?")) 
+     if (window.confirm("Esta seguro de que desea solicitar el formato para Gastos de Viaje?")) 
              { 
                  window.open("gen/GV.php", "Solicitud para Gastos de Viaje Realizada");
              }

@@ -99,7 +99,7 @@ echo "</table>";
 <!-- </section> -->
 
 <figure id="tarjetaDebito" class="espacioIconosGastos">
-	<a href="#" ><img src="/static/images/tarjetaDebito.png" class="iconoGastos"></a>
+	<a href="#" onclick="return confirmaTD();"><img src="/static/images/tarjetaDebito.png" class="iconoGastos"></a>
 	<figcaption>
 		Gastos con Tarjeta Débito
 	</figcaption>
