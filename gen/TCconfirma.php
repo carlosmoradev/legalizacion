@@ -6,6 +6,8 @@
 	<link rel="stylesheet" href="../static/styles/design.css">
 	</head>
 <body>
+	<p>Su consecutivo para Legalización de gastos en Tarjeta de Crédito es:</p>
+<section class="consecutivoConfirma">
 <?php
 ini_set('display_errors',1);
 error_reporting(E_ALL);
@@ -19,8 +21,9 @@ $result = mysqli_query($link, "SELECT * FROM documentos WHERE DOC_SIGLA = 'TC' O
 mysqli_data_seek($result, 0);
 $extraido = mysqli_fetch_array($result);
 
-echo "Su consecutivo para Legalización de gastos en Tarjeta de Crédito es TC".$extraido['DOC_ID']."<br/> ";
+echo "TC".$extraido['DOC_ID']."<br/> ";
 
 ?>
+</section>
 </body>
 </html>
