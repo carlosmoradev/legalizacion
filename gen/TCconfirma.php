@@ -1,6 +1,9 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8" />
+		<link rel="stylesheet" href="../static/styles/normalize.css">
+	<link rel="stylesheet" href="../static/styles/design.css">
 	</head>
 <body>
 <?php
@@ -16,7 +19,7 @@ $result = mysqli_query($link, "SELECT * FROM documentos WHERE DOC_SIGLA = 'TC' O
 mysqli_data_seek($result, 0);
 $extraido = mysqli_fetch_array($result);
 
-echo "- Documento: ".$extraido['DOC_ID']."<br/> ";
+echo "Su consecutivo para Legalización de gastos en Tarjeta de Crédito es TC".$extraido['DOC_ID']."<br/> ";
 
 ?>
 </body>
