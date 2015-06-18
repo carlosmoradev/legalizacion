@@ -145,6 +145,12 @@ html{
 	font-size: 2em;
 }
 
+.consecutivoConfirma, .textoConfirma
+{
+	background-color: rgba(250, 250, 250, 0.7);
+
+	text-align: center;
+}
 /*.inputfecha{
 	margin-top: 4em;
 }*/

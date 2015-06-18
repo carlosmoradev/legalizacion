@@ -15,14 +15,7 @@ En esta fase funcional, buscare que al momento de generar el consecutivo, puedan
 Durante todo ese proceso buscare ir mejorando el codigo, para pasar de un simple y burdo html+php(burdo) estructurado, a tener un php optimo, en MVC.  Lo ideal habria sido arrancar de una vez por MVC, pero preferi primero tener algo funcional, sobre el cual ir puliendo y mejorando en la marcha, en vez de esperar mientras asimilo la teoria del MVC, ya que el mundo de la programacion es un universo nuevo para mi.
 
 #TO DO
-[IMPORTANTE] Conectar los iconos a la base de datos
-
-[IMPORTANTE] Desde la ejecucion de un icono, confirmar si desea registrar el gasto y escribirlo en la base de datos.
-
-[IMPORTANTE] Mostrar el resultado del ultimo dato registrado.
 
 [IMPORTANTE] Publicar un archivo de texto que lleve el nombre del gasto registrado, para poder descargarlo.  Se toma un archivo base existente en el servidor y se copia con el nombre del gasto registrado.
-
-[IMPORTANTE] Lograr que el date picker funcione en firefox.  Posiblemente sea necesario manejarlo por javascript
 
 [OPCIONAL] Seria interesante que el usuario tenga la opcion de decidir si descargar el archivo directamente o lo envia a su cuenta de correo registrada.
