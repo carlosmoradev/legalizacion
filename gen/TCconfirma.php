@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="../static/styles/design.css">
 	</head>
 <body>
-	<p>Su consecutivo para Legalización de gastos en Tarjeta de Crédito es:</p>
+	<p class="textoConfirma"> Su consecutivo para Legalización de gastos en Tarjeta de Crédito es: </p>
 <section class="consecutivoConfirma">
 <?php
 ini_set('display_errors',1);
